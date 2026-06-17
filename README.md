@@ -1,103 +1,53 @@
 # Transform Digital
 
-### Transforming Businesses Into Digital Leaders
+Premium digital agency website — React, TypeScript, Tailwind CSS, Framer Motion.
 
-Transform Digital is a modern web design and digital solutions agency focused on helping businesses establish a professional online presence through premium websites and digital experiences.
+## Quick Start
 
----
+```bash
+npm install
+cp .env.example .env   # then fill in your keys
+npm run dev
+```
 
-## Services
+## Environment Variables
 
-* Gym Websites
-* Landing Pages
-* Business Websites
-* Website Redesign
-* Digital Presence Solutions
+Create a `.env` file in the project root:
 
----
+```env
+VITE_WEB3FORMS_ACCESS_KEY=your_key_from_web3forms.com
+VITE_CALLMEBOT_API_KEY=your_callmebot_key   # optional — for WhatsApp auto-notify
+VITE_OWNER_WHATSAPP_PHONE=919702839072
+VITE_SITE_URL=https://your-live-domain.com   # set after deploy for SEO
+```
 
-## Featured Projects
+**Email (required):** Get a free key at [web3forms.com](https://web3forms.com) using `pawankhot9@gmail.com`.
 
-### Transform Fitness Demo
+**WhatsApp (optional):** Message `CallMeBot` on WhatsApp (+34 684 72 96 75) with `I allow callmebot to send me messages` to get your API key.
 
-A premium fitness website concept featuring membership plans, trainer profiles, lead generation functionality, and responsive design.
+Add the same variables in Vercel/Netlify → Environment Variables when deploying.
 
-**Live Demo:**
-https://tranceform-fitness-gym-demo-pjjltuzhk.vercel.app/
+## Build & Deploy
 
-**GitHub:**
-https://github.com/TRANSFORM-DIGITAL-web/tranceform-fitness-demo
+```bash
+npm run build
+npm run preview
+```
 
----
+Deploy the `dist` folder to **Vercel** or **Netlify**. Both `vercel.json` and `netlify.toml` are included for SPA routing.
 
-### Elite Gym Landing Page
+After deploy, set `VITE_SITE_URL` to your live URL and rebuild — this updates `sitemap.xml`, `robots.txt`, and social preview tags.
 
-A conversion-focused gym landing page designed to maximize membership inquiries and free trial registrations.
+## Customize
 
-**Live Demo:**
-https://demo-gym-landing-page.vercel.app/
-
-**GitHub:**
-https://github.com/TRANSFORM-DIGITAL-web/elite-gym-landing-page-DEMO
-
----
-
-## Currently In Development
-
-### ChurnX
-
-AI-powered customer feedback intelligence platform.
-
-**Status:** Coming Soon
-
-### Feedback Analyser
-
-Advanced sentiment analysis and feedback intelligence solution.
-
-**Status:** Coming Soon
-
----
-
-## About The Founder
-
-Hi, I'm **Pawan Khot**, founder of Transform Digital.
-
-I'm an MCA student and web developer passionate about helping businesses establish a professional digital presence through modern websites and digital solutions.
-
-Transform Digital was created with a simple mission:
-
-**Transform businesses into digital leaders.**
-
----
+- **Content** → `src/data/content.ts`
+- **Legal pages** → `src/data/legal.ts`
+- **Logo** → `public/images/logo.png`
+- **Founder photo** → `public/images/founder.png`
+- **Project screenshots** → `public/images/projects/`
 
 ## Contact
 
-📧 Email: [pawankhot9@gmail.com](mailto:pawankhot9@gmail.com)
-
-📱 WhatsApp: +91 9702839072
-
----
-
-## GitHub Organization
-
-https://github.com/TRANSFORM-DIGITAL-web
-
----
-
-## Tech Stack
-
-* React
-* TypeScript
-* Tailwind CSS
-* Framer Motion
-* Vite
-
----
-
-## Mission
-
-Build modern, high-quality digital experiences that help businesses stand out online and create lasting impressions.
-
----
-
-**Transform Digital — Transforming Businesses Into Digital Leaders**
+- Email: pawankhot9@gmail.com
+- WhatsApp: +91 9702839072
+- GitHub: [TRANSFORM-DIGITAL-web](https://github.com/TRANSFORM-DIGITAL-web)
